@@ -1,19 +1,21 @@
-# WinFormsMain — Simple Windows main page
+# WinFormsMain — Workshop manager sample
 
-This is a minimal C# WinForms main page targeting .NET 7 for Windows.
+This WinForms app targets .NET 10 for Windows and demonstrates a lightweight workshop workflow:
 
-Prerequisites
-- .NET 7 SDK installed on Windows
+- Capture vehicle details by registration, VIN, make, model, engine, transmission and owner contact info.
+- Schedule jobs against a vehicle with a description and planned date.
+- Preview SMS reminders and booking confirmations to notify vehicle owners.
 
-Build and run
+## Prerequisites
+- .NET 10 SDK installed on Windows
+
+## Build and run
 ```powershell
 dotnet build C:\Users\frank\Documents\GitHub\TSC-Workshop\app\WinFormsMain\WinFormsMain.csproj
 dotnet run --project C:\Users\frank\Documents\GitHub\TSC-Workshop\app\WinFormsMain\WinFormsMain.csproj
 ```
 
-What you get
-- A main window with a title, two buttons (`Open`, `Settings`) and a status label.
-
-Next steps
-- Replace the button handlers with real app logic.
-- Convert to WPF or WinUI if you prefer modern UI features.
+## How it works
+- Add or update vehicles with the **Add / Update Vehicle** button. Vehicles are listed in the grid and available to select in the jobs and SMS areas.
+- Add a job by choosing a vehicle, entering a description and a date, then select **Add Job** to track it in the jobs grid.
+- Use the SMS panel to pick a vehicle and send a service reminder or booking confirmation. Messages are previewed in-app and displayed in a dialog to mimic sending; a phone number is required before sending.
