@@ -32,27 +32,27 @@ namespace WinFormsMain
         private readonly BindingList<Job> jobs = new();
         private readonly BindingSource vehicleBinding = new();
 
-        private readonly TextBox txtRegistration;
-        private readonly TextBox txtVin;
-        private readonly TextBox txtMake;
-        private readonly TextBox txtModel;
-        private readonly TextBox txtEngine;
-        private readonly TextBox txtTransmission;
-        private readonly TextBox txtOwnerName;
-        private readonly TextBox txtOwnerPhone;
-        private readonly Button btnAddVehicle;
-        private readonly DataGridView vehicleGrid;
+        private TextBox txtRegistration;
+        private TextBox txtVin;
+        private TextBox txtMake;
+        private TextBox txtModel;
+        private TextBox txtEngine;
+        private TextBox txtTransmission;
+        private TextBox txtOwnerName;
+        private TextBox txtOwnerPhone;
+        private Button btnAddVehicle;
+        private DataGridView vehicleGrid;
 
-        private readonly ComboBox cboJobVehicle;
-        private readonly TextBox txtJobDescription;
-        private readonly DateTimePicker dtpJobDate;
-        private readonly Button btnAddJob;
-        private readonly DataGridView jobGrid;
+        private ComboBox cboJobVehicle;
+        private TextBox txtJobDescription;
+        private DateTimePicker dtpJobDate;
+        private Button btnAddJob;
+        private DataGridView jobGrid;
 
-        private readonly ComboBox cboSmsVehicle;
-        private readonly TextBox txtSmsMessage;
-        private readonly Button btnServiceReminder;
-        private readonly Button btnBookingConfirmation;
+        private ComboBox cboSmsVehicle;
+        private TextBox txtSmsMessage;
+        private Button btnServiceReminder;
+        private Button btnBookingConfirmation;
 
         public MainForm()
         {
