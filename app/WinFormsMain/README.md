@@ -1,13 +1,13 @@
 # WinFormsMain — Workshop manager sample
 
-This WinForms app targets .NET 10 for Windows and demonstrates a lightweight workshop workflow:
+This WinForms app targets .NET 7 for Windows and demonstrates a lightweight workshop workflow:
 
 - Capture vehicle details by registration, VIN, make, model, engine, transmission and owner contact info.
 - Schedule jobs against a vehicle with a description and planned date.
 - Preview SMS reminders and booking confirmations to notify vehicle owners.
 
 ## Prerequisites
-- .NET 10 SDK installed on Windows
+- .NET 7 SDK installed on Windows
 
 ## Build and run
 ```powershell
