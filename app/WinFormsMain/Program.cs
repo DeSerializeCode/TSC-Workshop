@@ -1,18 +1,16 @@
 using System;
 using System.Windows.Forms;
 
-namespace WinFormsMain
-{
-    internal static class Program
-    {
-        [STAThread]
-        private static void Main()
-        {
-            Application.SetHighDpiMode(HighDpiMode.SystemAware);
-            Application.EnableVisualStyles();
-            Application.SetCompatibleTextRenderingDefault(false);
+namespace WinFormsMain;
 
-            Application.Run(new MainForm());
-        }
+internal static class Program
+{
+    [STAThread]
+    private static void Main()
+    {
+        Application.SetHighDpiMode(HighDpiMode.SystemAware);
+        Application.EnableVisualStyles();
+        Application.SetCompatibleTextRenderingDefault(false);
+        Application.Run(new MainForm());
     }
 }
